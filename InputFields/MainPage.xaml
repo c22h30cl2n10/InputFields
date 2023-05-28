@@ -7,7 +7,7 @@
     <ContentPage.BindingContext>
         <viewmodel:MainViewModel/>
     </ContentPage.BindingContext>
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -17,37 +17,20 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <Entry Grid.Row="0" Grid.Column="0" 
+        <Entry Grid.Row="0"
                Text="{Binding Password}" 
                IsPassword="{Binding IsPasswordHidden}" 
                Placeholder="Пароль"/>
 
-        <ImageButton Grid.Row="0" Grid.Column="1"
+        <ImageButton Grid.Row="0"
                      Source="{Binding TogglePasswordButtonImage}"
                      BackgroundColor="Transparent"
                      Command="{Binding TogglePasswordCommand}"
-                     HeightRequest="30"
-                     WidthRequest="30"
-                     VerticalOptions="Center"
-                     HorizontalOptions="End"
-                     Margin="5,0">
+                     HorizontalOptions="End" 
+                     VerticalOptions="Center" 
+                     HeightRequest="24" 
+                     WidthRequest="24"
+                     Margin="12">
         </ImageButton>
-
-        <Button Grid.Row="1" Grid.Column="0"
-                Text="Тень"
-                Command="{Binding TogglePasswordCommand}"
-                BackgroundColor="{StaticResource Secondary}"
-                HeightRequest="30"
-                WidthRequest="80"
-                VerticalOptions="Center"
-                HorizontalOptions="End"
-                Margin="5,0">
-            <Button.Shadow>
-                <Shadow Brush="{StaticResource Gray400}"
-                Offset="4,2"
-                Radius="8"
-                Opacity="1.0"/>
-            </Button.Shadow>
-        </Button>
     </Grid>
 </ContentPage>

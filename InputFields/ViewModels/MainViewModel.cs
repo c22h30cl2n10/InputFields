@@ -38,7 +38,7 @@ namespace InputFields.ViewModels
             //Установка пароля в скрытое состояние по умолчанию
             TogglePasswordCommand = new Command(TogglePasswordVisibility);
             IsPasswordHidden = true;
-            TogglePasswordButtonImage = "hide_eye.png";
+            TogglePasswordButtonImage = "hide_eye_gray.png";
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -64,7 +64,7 @@ namespace InputFields.ViewModels
             //Смена вилимости пароля
             IsPasswordHidden = !IsPasswordHidden;
             //Смена картинки
-            TogglePasswordButtonImage = IsPasswordHidden ? "hide_eye.png" : "open_eye.png";
+            TogglePasswordButtonImage = IsPasswordHidden ? "hide_eye_gray.png" : "open_eye_gray.png";
         }
     }
 }

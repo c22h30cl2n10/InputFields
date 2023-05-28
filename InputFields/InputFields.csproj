@@ -52,7 +52,9 @@
 	  <None Remove="Resources\Images\eye_closed.svg" />
 	  <None Remove="Resources\Images\eye_open.svg" />
 	  <None Remove="Resources\Images\hide_eye.png" />
+	  <None Remove="Resources\Images\hide_eye_gray.svg" />
 	  <None Remove="Resources\Images\open_eye.png" />
+	  <None Remove="Resources\Images\open_eye_gray.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
