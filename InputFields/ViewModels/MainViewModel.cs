@@ -37,9 +37,17 @@ namespace InputFields.ViewModels
         {
             //Установка пароля в скрытое состояние по умолчанию
             TogglePasswordCommand = new Command(TogglePasswordVisibility);
-            IsPasswordHidden = true;
+            IsPasswordHidden = true; 
             TogglePasswordButtonImage = "hide_eye.png";
         }
+
+        private void TogglePasswordVisibility()
+        {
+            IsPasswordHidden = !IsPasswordHidden;
+            TogglePasswordButtonImage = IsPasswordHidden ? "hide_eye.png" : "open_eye.png";
+        }
+
+        #region INotifyPropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
 
